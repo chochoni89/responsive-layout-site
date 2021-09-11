@@ -53,6 +53,7 @@ img {
 	font-family: 'Comfortaa';
 	font-weight: 700;
 	margin: 0;
+	white-space: nowrap;
 }
 .main-nav {
 	margin-top: 5px;
