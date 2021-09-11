@@ -93,6 +93,9 @@ img {
 .contact p {
 	margin: 1rem;
 }
+.hidden-mobile {
+	display: none;
+}
 
 /* ---- Layout Containers ---- */
 
@@ -122,10 +125,6 @@ img {
 	margin: 0.5em 1em;
   border-top: 1px dotted grey;
 }
-.footer-nav {
-  display: flex;
-  flex-direction: row;
-}
 .footer-nav a {
   padding: 10px 3px;
 	font-size: .8em;
@@ -133,8 +132,10 @@ img {
 	color: #093a58;
 	text-transform: uppercase;
 }
-.footer-name {
+.footer-name,
+.footer-nav {
   font-size: 1rem;
+	white-space: nowrap;
 }
 .endnote {
 	padding: 0 2rem;
@@ -157,7 +158,8 @@ img {
   .banner,
   .portfolio,
   .main-footer,
-  .footer-nav {
+  .footer-nav,
+	.hidden-mobile {
 		display: flex;
 	}
 	.main-header {
@@ -182,6 +184,15 @@ img {
 	.main-footer {
 		width: 90%;
 		margin: 0 auto;
+	}
+	.footer-nav {
+		flex-direction: row;
+	}
+	.hidden-wide {
+		display: none;
+	}
+	.hidden-mobile {
+		display: inline;
 	}
 	.footer-nav a {
 	  padding: 10px 15px;
